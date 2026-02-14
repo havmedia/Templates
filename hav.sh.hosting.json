@@ -1,0 +1,18 @@
+{
+    "providerId": "hav.sh",
+    "providerName": "HAV.sh",
+    "serviceId": "hosting",
+    "serviceName": "HAV.sh Hosting",
+    "description": "Set up DNS records for HAV.sh managed hosting.",
+    "version": 1,
+    "logoUrl": "https://hav.sh/images/logo.svg",
+    "variableDescription": "IP address of the HAV.sh managed server.",
+    "records": [
+        {
+            "type": "A",
+            "host": "%host%",
+            "pointsTo": "%IP%",
+            "ttl": 3600
+        }
+    ]
+}
